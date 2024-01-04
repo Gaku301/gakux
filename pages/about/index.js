@@ -50,6 +50,7 @@ const About = () => {
               </div>
             </div>
           </div>
+
           {/* <div className="mb-10">
             <h1 className="text-xl font-bold">What I provide</h1>
           </div>
