@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  /* transition: 0.4s;
+  color: rgb(193, 193, 193); */
+  @apply transition hover:opacity-40
+}
+
+.markdown h2 {
+  @apply text-3xl font-semibold py-10
+}
+
+.markdown h3 {
+  @apply text-2xl font-semibold py-10
+}
+
+.markdown h4 {
+  @apply text-xl font-semibold py-10
+}
+
+.markdown a {
+  @apply underline
+}
+
+.markdown p {
+  @apply py-7
+}
+
+.markdown p > code {
+  @apply text-orange-700
+}
+
+.markdown blockquote {
+  position: relative;
+  padding: 10px 15px 10px 50px;
+  box-sizing: border-box;
+  font-style: italic;
+  background: #f6f6f6;
+  color: #555;
+}
+
+.markdown blockquote:before{
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: -3px;
+  content: "“";
+  font-family: sans-serif;
+  color: #cfcfcf;
+  font-size: 90px;
+  line-height: 1;
+}
+
+.markdown blockquote p {
+  padding: 0;
+  margin: 10px 0;
+  line-height: 1.7;
+}
+
+.markdown blockquote cite {
+  display: block;
+  text-align: right;
+  color: #888888;
+  font-size: 0.9em;
+}
+
+.markdown ul, .markdown ol {
+  @apply p-3 m-2
+}
+
+/* リスト */
+.markdown ul > li {
+  @apply list-disc ml-6 my-1 pl-2
+}
+
+/* リスト(数字タイプ) */
+.markdown ol > li {
+  @apply list-decimal ml-6 my-1 pl-2
+}
+
+.markdown table,
+.markdown th, 
+.markdown td {
+  @apply border-collapse border p-4
+}
+
+.markdown th {
+  @apply bg-neutral-100
+}
