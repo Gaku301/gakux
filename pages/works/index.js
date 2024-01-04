@@ -92,7 +92,7 @@ const Works = () => {
                   </p>
                 </div>
                 <div className="flex items-center">
-                  <Link href="https://nennshu.gakux.net/">
+                  <Link href="https://kyuuyo.vercel.app/">
                     <a target="_blank" ref="noreferrer noopener" className="font-bold underline">
                       みんなの給与
                       <FontAwesomeIcon
