@@ -17,11 +17,6 @@ export default function Footer() {
             <a>利用規約</a>
           </Link>
         </li>
-        <li className="mx-2">
-          <Link href="/specified-commercial-transaction">
-            <a>特定商取引法に基づく表記</a>
-          </Link>
-        </li>
       </ul>
       <div className="text-center p-5">
         <span>&copy; </span>
