@@ -37,8 +37,8 @@ const About = () => {
               <div className="py-5">
                 <p className="leading-loose">
                   ios/androidアプリ、webアプリをメインに作っています。<br/>
-                  「シンプルかつクリエイティブに」をモットーにして生きています。<br/>
-                  お酒(特に日本酒)、アクアリウム(海水)、作ることが好きです。
+                  「シンプルかつクリエイティブに」がモットーです。<br/>
+                  お酒(特に日本酒)、アクアリウム(海水)、作ることが好きだったりします。
                 </p>
               </div>
               <div className="py-5">
@@ -51,11 +51,18 @@ const About = () => {
             </div>
           </div>
 
-          {/* <div className="mb-10">
+          <div className="mb-10">
             <h1 className="text-xl font-bold">What I provide</h1>
           </div>
           <div className="md:flex md:justify-center pb-10 mb-10">
-          </div> */}
+            <div className="w-full">
+              <ul className="m-5 list-disc pl-10 leading-loose">
+                <li>webアプリケーションの請負開発</li>
+                <li>iOS / Androidアプリの請負開発</li>
+                <li>その他のソフトウェア開発または委託業務</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
       <Footer/>

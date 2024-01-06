@@ -6,7 +6,7 @@ import Link from "next/link"
 export default function Footer() {
   return(
     <footer className="text-center pt-10">
-      <ul className="flex items-center justify-center">
+      <ul className="md:flex xs:flex-wrap items-center justify-center leading-loose">
         <li className="mx-2">
           <Link href="/privacy-policy">
             <a>プライパシーポリシー</a>
@@ -17,13 +17,18 @@ export default function Footer() {
             <a>利用規約</a>
           </Link>
         </li>
+        <li className="mx-2">
+          <Link href="/specified-commercial-transaction">
+            <a>特定商取引法に基づく表記</a>
+          </Link>
+        </li>
       </ul>
       <div className="text-center p-5">
         <span>&copy; </span>
         <Link href="/">
           <a className="font-bold font-serif">GAKUX</a>
         </Link>
-        <span> 2021</span>
+        <span> 2024</span>
       </div>
     </footer> 
   )
