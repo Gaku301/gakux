@@ -20,13 +20,13 @@ const PrivacyPolicy = () => {
       <Header />
       <main className="container m-auto pb-10">
         <article className="justify-center mx-auto my-10 xs:w-4/5 md:w-3/4 lg:w-3/5">
-          <h1 className="text-4xl font-bold py-5">プライバシーポリシー</h1>
+          <h1 className="text-2xl font-extrabold">プライバシーポリシー</h1>
           <section className="my-10">
             <div>
               <p>GAKUX（以下，「当社」といいます。）は，当社が提供するサービス（以下,「当社サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p>
               <p>本サービスのご使用によって、本規約に同意していただいたものとみなします。</p>
 
-              <h2 className="text-2xl font-bold py-10">個人情報の利用目的について</h2>
+              <h2 className="text-xl font-bold py-10">個人情報の利用目的について</h2>
               <p>当社が個人情報を収集・利用する目的は，以下のとおりです。</p>
               <ul className="my-5 list-disc pl-10">
                 <li>当社サービスの提供・運営のため</li>
@@ -38,14 +38,14 @@ const PrivacyPolicy = () => {
                 <li>上記の利用目的に付随する目的 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold py-10">個人情報の第三者開示について</h2>
+              <h2 className="text-xl font-bold py-10">個人情報の第三者開示について</h2>
               <p>取得した個人情報は適切に管理し、以下に該当する場合を除いて第三者に開示することはありません。</p>
               <ul>
                 <li>本人の同意が得られた場合</li>
                 <li>法令により開示が求められた場合</li>
               </ul>
 
-              <h2 className="text-2xl font-bold py-10">広告配信サービス、アクセス解析ツールについて</h2>
+              <h2 className="text-xl font-bold py-10">広告配信サービス、アクセス解析ツールについて</h2>
               <p>
                 当社サービスでは、第三者配信の広告サービスや、アクセス解析ツールを使用している場合がございます。<br/>
                 取得する情報、利用目的、第三者への提供等の詳細につきましては、以下のプライバシーポリシーのリンクよりご確認ください。<br/>
@@ -81,7 +81,7 @@ const PrivacyPolicy = () => {
                 </li>
               </ul>
 
-              <h2 className="text-2xl font-bold py-10">免責事項</h2>
+              <h2 className="text-xl font-bold py-10">免責事項</h2>
               <p>
                 当社サービスがユーザーの特定の目的に適合すること、期待する機能・商品的価値・正確性・有用性を有すること、および不具合が生じないことについて、何ら保証するものではありません。 <br/>
                 当社の都合によりアプリの仕様を変更できます。
@@ -90,16 +90,16 @@ const PrivacyPolicy = () => {
                 また、リンク先の他サイトで提供される情報・サービスについても、責任を負いかねますのでご了承ください。
               </p>
 
-              <h2 className="text-2xl font-bold py-10">著作権</h2>
+              <h2 className="text-xl font-bold py-10">著作権</h2>
               <p>著作権その他一切の権利は、当社又は権利を有する第三者に帰属します。</p>
 
-              <h2 className="text-2xl font-bold py-10">プライバシーポリシーの変更</h2>
+              <h2 className="text-xl font-bold py-10">プライバシーポリシーの変更</h2>
               <p>
                 当社は、個人情報に関して適用される日本の法令を遵守するとともに、本プライバシーポリシーの内容を適宜見直して改善に努めます。<br/>
                 修正された最新のプライバシーポリシーは常に本ページにて開示されます。
               </p>
 
-              <h2 className="text-2xl font-bold py-10">お問い合わせ先</h2>
+              <h2 className="text-xl font-bold py-10">お問い合わせ先</h2>
               <p>本ポリシーに関するお問い合わせは、下記メールアドレスまでご連絡ください。</p>
               <Link href="mailto:address">
                 <a className="underline underline-offset-1">takanexx@gmail.com</a>
