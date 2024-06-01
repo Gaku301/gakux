@@ -22,7 +22,7 @@ const About = () => {
       <main className="container m-auto">
         <div className="container xs:px-5 md:px-10 lg:px-48 my-20">
           <div className="mb-10">
-            <h1 className="text-2xl font-extrabold">about</h1>
+            <h1 className="text-3xl font-extrabold">about</h1>
           </div>
           <div className="md:flex md:justify-center pb-10 mb-10">
             <div className="xs:w-full md:w-1/3 flex justify-center items-center xs:mb-10 md:mb-0">

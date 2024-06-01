@@ -3,6 +3,7 @@ import Header from "../../components/header"
 import Footer from "../../components/footer";
 import Image from "next/image";
 import AqualistLogo from "../../public/aqualist.png"
+import LogsLogo from "../../public/logs.png"
 import KyuuyoLogo from "../../public/kyuuyo.png"
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -26,7 +27,7 @@ const Works = () => {
       <main className="container m-auto">
         <div className="container xs:px-5 md:px-10 lg:px-48 my-20">
           <div className="mb-10">
-            <h1 className="text-2xl font-extrabold">works</h1>
+            <h1 className="text-3xl font-extrabold">works</h1>
           </div>
           <div className="md:flex-col md:justify-center pb-10 mb-10 border-y-2">
             <h4 className="text-2xl font-medium py-5">Aqualist</h4>
@@ -70,6 +71,35 @@ const Works = () => {
                         alt='Google Play で手に入れよう'
                         width={180}
                         height={65}
+                      />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="md:flex-col md:justify-center pb-10 mb-10 border-b-2">
+            <h4 className="text-2xl font-medium py-5">Logs - 習慣を記録</h4>
+            <div className="w-full md:flex">
+              <div className="xs:w-full md:w-1/3 flex justify-center items-center xs:mb-10 md:mb-0">
+                <Image src={LogsLogo} alt="aqualist" width={150} height={150}/>
+              </div>
+              <div className="xs:w-full md:w-2/3 px-5">
+                <div className="py-2">
+                  <p>習慣を記録するアプリ。</p>
+                  <p className="py-5 leading-relaxed">
+                    習慣を記録し可視化することで継続率をアップ。<br/>
+                    継続をもっと楽しく。
+                  </p>
+                </div>
+                <div className="flex items-center">
+                  <Link href="https://apple.co/3QShC15">
+                    <a target="_blank" ref="noreferrer noopener">
+                      <Image
+                        src="https://apple-resources.s3.amazonaws.com/media-badges/download-on-the-app-store/black/ja-jp.svg"
+                        alt="Download on the App Store"
+                        width={200}
+                        height={50}
                       />
                     </a>
                   </Link>

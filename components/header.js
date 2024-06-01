@@ -56,8 +56,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="mx-5">
-            <Link href="/blog">
-              <a>blog</a>
+            <Link href="/posts">
+              <a>posts</a>
             </Link>
           </li>
           <style jsx>{`

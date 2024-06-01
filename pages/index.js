@@ -27,7 +27,7 @@ export default function Home() {
                   <Link href="/works"><a>works</a></Link>
                 </li>
                 <li className="mx-2">
-                  <Link href="/blog"><a>blog</a></Link>
+                  <Link href="/posts"><a>posts</a></Link>
                 </li>
                 <style jsx>{`
                   a{
