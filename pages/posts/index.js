@@ -21,10 +21,22 @@ export const getServerSideProps = async () => {
     const resNote = await fetch(noteUrl);
     const noteData = await resNote.json();
 
+    // 3件だけZennからのポストを表示する
+    let zennPosts = ZennData.articles ?? [];
+    if (ZennData?.articles.length > 3) {
+      zennPosts = ZennData?.articles.slice(0, 3);
+    }
+
+    // 3件だけnoteからのポストを表示する
+    let notePosts = noteData.data.contents ?? [];
+    if (noteData.data.contents.length > 3) {
+      notePosts = noteData.data.contents.slice(0, 3);
+    }
+
     return {
       props: {
-        zennPosts: ZennData.articles ?? [],
-        notePosts: noteData.data.contents ?? [],
+        zennPosts: zennPosts,
+        notePosts: notePosts,
       }
     }
   } catch (error) {
