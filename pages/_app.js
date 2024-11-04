@@ -8,7 +8,7 @@ import usePageView from '../hooks/usePageView';
 import GoogleAnalytics from '../components/GoogleAnalytics';
 
 function MyApp({ Component, pageProps }) {
-  usePageView()
+  // usePageView()
 
   return (
     <>
