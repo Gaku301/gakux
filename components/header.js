@@ -60,6 +60,11 @@ const Header = () => {
               <a>posts</a>
             </Link>
           </li>
+          <li className="mx-5">
+            <Link href="/sake-log">
+              <a>sake</a>
+            </Link>
+          </li>
           <style jsx>{`
             a{
               position: relative;
