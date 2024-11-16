@@ -9,34 +9,34 @@ importers:
   .:
     dependencies:
       '@fortawesome/fontawesome-svg-core':
-        specifier: ^1.2.35
-        version: 1.3.0
+        specifier: ^1.2.36
+        version: 1.2.36
       '@fortawesome/free-brands-svg-icons':
-        specifier: ^5.15.3
+        specifier: ^5.15.4
         version: 5.15.4
       '@fortawesome/free-regular-svg-icons':
-        specifier: ^5.15.3
+        specifier: ^5.15.4
         version: 5.15.4
       '@fortawesome/react-fontawesome':
-        specifier: ^0.1.14
-        version: 0.1.19(@fortawesome/fontawesome-svg-core@1.3.0)(react@18.3.1)
+        specifier: ^0.1.19
+        version: 0.1.19(@fortawesome/fontawesome-svg-core@1.2.36)(react@18.3.1)
       axios:
-        specifier: ^0.21.1
+        specifier: ^0.21.4
         version: 0.21.4
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
       highlight.js:
-        specifier: ^11.4.0
+        specifier: ^11.10.0
         version: 11.10.0
       next:
-        specifier: ^12.0.10
+        specifier: ^12.3.4
         version: 12.3.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1
       react-dom:
-        specifier: ^18.2.0
+        specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
       react-google-charts:
         specifier: ^3.0.15
@@ -45,19 +45,19 @@ importers:
         specifier: ^5.0.2
         version: 5.0.2
       rehype-stringify:
-        specifier: ^9.0.3
+        specifier: ^9.0.4
         version: 9.0.4
       remark:
-        specifier: ^14.0.2
+        specifier: ^14.0.3
         version: 14.0.3
       remark-gfm:
         specifier: ^3.0.1
         version: 3.0.1
       remark-html:
-        specifier: ^15.0.1
+        specifier: ^15.0.2
         version: 15.0.2
       remark-parse:
-        specifier: ^10.0.1
+        specifier: ^10.0.2
         version: 10.0.2
       remark-rehype:
         specifier: ^10.1.0
@@ -66,14 +66,14 @@ importers:
         specifier: ^0.170.0
         version: 0.170.0
       unified:
-        specifier: ^10.1.1
+        specifier: ^10.1.2
         version: 10.1.2
     devDependencies:
       autoprefixer:
-        specifier: ^10.4.2
+        specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.47)
       chart.js:
-        specifier: ^3.5.1
+        specifier: ^3.9.1
         version: 3.9.1
       eslint:
         specifier: 7.30.0
@@ -85,13 +85,13 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@7.30.0)
       postcss:
-        specifier: ^8.4.5
+        specifier: ^8.4.47
         version: 8.4.47
       react-chartjs-2:
-        specifier: ^3.0.4
+        specifier: ^3.3.0
         version: 3.3.0(chart.js@3.9.1)(react@18.3.1)
       tailwindcss:
-        specifier: ^3.0.18
+        specifier: ^3.4.14
         version: 3.4.14
 
 packages:
@@ -119,15 +119,9 @@ packages:
     resolution: {integrity: sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==}
     engines: {node: '>=6'}
 
-  '@fortawesome/fontawesome-common-types@0.3.0':
-    resolution: {integrity: sha512-CA3MAZBTxVsF6SkfkHXDerkhcQs0QPofy43eFdbWJJkZiq3SfiaH1msOkac59rQaqto5EqWnASboY1dBuKen5w==}
+  '@fortawesome/fontawesome-svg-core@1.2.36':
+    resolution: {integrity: sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==}
     engines: {node: '>=6'}
-    deprecated: Please upgrade to 6.1.0. https://fontawesome.com/docs/changelog/
-
-  '@fortawesome/fontawesome-svg-core@1.3.0':
-    resolution: {integrity: sha512-UIL6crBWhjTNQcONt96ExjUnKt1D68foe3xjEensLDclqQ6YagwCRYVQdrp/hW0ALRp/5Fv/VKw+MqTUWYYvPg==}
-    engines: {node: '>=6'}
-    deprecated: Please upgrade to 6.1.0. https://fontawesome.com/docs/changelog/
 
   '@fortawesome/free-brands-svg-icons@5.15.4':
     resolution: {integrity: sha512-f1witbwycL9cTENJegcmcZRYyawAFbm8+c6IirLmwbbpqz46wyjbQYLuxOc7weXFXfB7QR8/Vd2u5R3q6JYD9g==}
@@ -2086,11 +2080,9 @@ snapshots:
 
   '@fortawesome/fontawesome-common-types@0.2.36': {}
 
-  '@fortawesome/fontawesome-common-types@0.3.0': {}
-
-  '@fortawesome/fontawesome-svg-core@1.3.0':
+  '@fortawesome/fontawesome-svg-core@1.2.36':
     dependencies:
-      '@fortawesome/fontawesome-common-types': 0.3.0
+      '@fortawesome/fontawesome-common-types': 0.2.36
 
   '@fortawesome/free-brands-svg-icons@5.15.4':
     dependencies:
@@ -2100,9 +2092,9 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 0.2.36
 
-  '@fortawesome/react-fontawesome@0.1.19(@fortawesome/fontawesome-svg-core@1.3.0)(react@18.3.1)':
+  '@fortawesome/react-fontawesome@0.1.19(@fortawesome/fontawesome-svg-core@1.2.36)(react@18.3.1)':
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 1.3.0
+      '@fortawesome/fontawesome-svg-core': 1.2.36
       prop-types: 15.8.1
       react: 18.3.1
 

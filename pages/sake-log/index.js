@@ -4,7 +4,6 @@ import Footer from "../../components/footer";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import * as THREE from 'three';
 import { useEffect } from "react";
-import SakeModel from "../../components/SakeModel";
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 
@@ -40,8 +39,9 @@ const About = () => {
     let model = null;
     // Loader(gltf|glb)
     const loader = new GLTFLoader();
-    const sake = 'models/houraisen.glb';
-    loader.load(sake, function (gltf) {
+    const houraisen = 'models/houraisen.glb';
+    const zaku = 'models/zaku.glb';
+    loader.load(zaku, function (gltf) {
       model = gltf.scene;
       model.scale.set(2, 2, 2);
       scene.add(model);
@@ -51,11 +51,11 @@ const About = () => {
     });
 
     function animate() {
-      requestAnimationFrame( animate );
+      requestAnimationFrame(animate);
       // 横回転
       model.rotation.y += 0.01;
 
-      renderer.render( scene, camera );
+      renderer.render(scene, camera);
     }
   }, [])
 
@@ -71,12 +71,10 @@ const About = () => {
         <div className="container xs:px-5 md:px-10 lg:px-48 my-20">
           <div className="mb-10">
             <h1 className="text-3xl font-extrabold">sake</h1>
+            <p className="p-5">今まで飲んだ日本酒たち</p>
           </div>
           <div className="md:flex md:justify-center pb-10 mb-10">
-            <canvas id="canvas" className=" bg-slate-200"></canvas>
-            {/* <div className="p-20 bg-slate-200">
-              <SakeModel />
-            </div> */}
+            <canvas id="canvas" className="shadow-2xl rounded-lg"></canvas>
           </div>
         </div>
       </main>
