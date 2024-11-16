@@ -3,6 +3,11 @@ import Header from "../../components/header"
 import Footer from "../../components/footer";
 import Image from "next/image";
 import Logo from "../../public/logo.png"
+import SakeCard from "../../components/SakeCard";
+
+import { useState } from "react";
+import { getSakeInfo } from "../../lib/sake";
+
 
 
 const About = () => {
@@ -10,6 +15,20 @@ const About = () => {
   const description = "This page is about Takane and GAKUXx&Co.";
   const keywords = "about,profile,プロフィール"
   const url = "about"
+
+  const [selected, setSelected] = useState('zaku');
+  const [sake, setSake] = useState(getSakeInfo('zaku'));
+
+  const getSakeEmoji = () => {
+    return '&#127862;'.replace(/&#(.*?);/g, (_, p1) => String.fromCodePoint(`0${p1}`));
+  }
+
+  const onClickSake = (sakeName) => {
+    // 酒情報を取得しセット
+    const sakeInfo = getSakeInfo(sakeName); 
+    setSake(sakeInfo);
+    setSelected(sakeName);
+  }
 
   return (
     <Layout
@@ -30,7 +49,7 @@ const About = () => {
             </div>
             <div className="xs:w-full md:w-2/3 px-5">
               <h4 className="text-2xl font-medium mb-5">
-                Takane
+                takane
                 <span className="text-lg mx-2"> / </span>
                 <span className="text-lg">GAKUX&Co.</span>
               </h4>
@@ -49,6 +68,25 @@ const About = () => {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="py-10 border-t-2">
+            <h2 className="text-2xl font-medium">Sake Collection</h2>
+            <p className="px-3 mt-5">※今までに飲んだ日本酒たち</p>
+            <div className="flex justify-start items-center pt-2 pb-5">
+              <button
+                className={`m-2 shadow-2xl rounded-lg text-center p-2 ${selected === 'zaku' && 'underline'}`}
+                onClick={() => onClickSake('zaku')}
+              >
+                {selected === 'zaku' && getSakeEmoji()} 作
+              </button>
+              <button
+                className={`m-2 shadow-2xl rounded-lg text-center p-2 ${selected === 'houraisen' && 'underline'}`}
+                onClick={() => onClickSake('houraisen')}
+              >
+                {selected === 'houraisen' && getSakeEmoji()} 蓬莱泉
+              </button>
+            </div>
+            <SakeCard selectedSake={sake} />
           </div>
         </div>
       </main>
